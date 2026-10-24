@@ -47,3 +47,5 @@ export const UNITS_DATA: UnitInfo[] = [
     color: 'from-amber-500 to-orange-500',
   },
 ];
+
+export const UNITS = UNITS_DATA;

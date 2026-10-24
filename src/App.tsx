@@ -14,6 +14,7 @@ import { VisualizerPage } from './pages/VisualizerPage';
 import { PracticeArenaPage } from './pages/PracticeArenaPage';
 import { ExamPrepPage } from './pages/ExamPrepPage';
 import { ProgressAnalyticsPage } from './pages/ProgressAnalyticsPage';
+import { CodeLibraryPage } from './pages/CodeLibraryPage';
 import { CPlayground } from './components/playground/CPlayground';
 
 const MainApp: React.FC = () => {
@@ -75,6 +76,13 @@ const MainApp: React.FC = () => {
           )}
 
           {currentPage === 'visualizer' && <VisualizerPage />}
+
+          {currentPage === 'code-library' && (
+            <CodeLibraryPage
+              onNavigate={handleNavigate}
+              onSelectLesson={handleSelectLesson}
+            />
+          )}
 
           {currentPage === 'playground' && (
             <div className="space-y-6 py-4">

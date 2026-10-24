@@ -7,6 +7,7 @@ import {
   Eye,
   BookOpen,
   Code2,
+  FileCode2,
   Trophy,
   GraduationCap,
   LineChart,
@@ -20,6 +21,7 @@ export type AppPage =
   | 'roadmap'
   | 'lesson'
   | 'visualizer'
+  | 'code-library'
   | 'playground'
   | 'practice'
   | 'exam-prep'
@@ -46,6 +48,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'roadmap', label: 'Syllabus Roadmap (5 Units)', icon: <Map className="w-4 h-4" /> },
     { id: 'lesson', label: 'Concept Learning Page', icon: <BookOpen className="w-4 h-4" /> },
     { id: 'visualizer', label: 'Interactive Visualizer', icon: <Eye className="w-4 h-4" />, badge: 'Core' },
+    { id: 'code-library', label: 'C Code Library & Coverage', icon: <FileCode2 className="w-4 h-4" />, badge: '60+ Progs' },
     { id: 'playground', label: 'C Code Playground', icon: <Code2 className="w-4 h-4" /> },
     { id: 'practice', label: 'Practice Arena (MCQs)', icon: <Trophy className="w-4 h-4" /> },
     { id: 'exam-prep', label: 'Exam Prep Center', icon: <GraduationCap className="w-4 h-4" />, badge: 'Pass Fast' },

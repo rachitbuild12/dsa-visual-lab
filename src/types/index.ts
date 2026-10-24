@@ -105,6 +105,40 @@ export type VisualizerType =
   | 'sorting'
   | 'hashing';
 
+export type ProgramCategory =
+  | 'Arrays'
+  | 'Searching'
+  | 'Sorting'
+  | 'Linked Lists'
+  | 'Polynomials'
+  | 'Hashing'
+  | 'Stacks'
+  | 'Recursion'
+  | 'Queues'
+  | 'Trees'
+  | 'Heaps'
+  | 'Graphs';
+
+export interface CProgram {
+  id: string;
+  unitId: UnitId;
+  topic: string;
+  title: string;
+  category: ProgramCategory;
+  status: 'COMPLETE' | 'PARTIAL' | 'MISSING';
+  description: string;
+  code: string;
+  sampleInput: string;
+  expectedOutput: string;
+  timeComplexity: string;
+  spaceComplexity: string;
+  edgeCases: string[];
+  algorithmSteps: string[];
+  isStandalone: boolean;
+  relatedLessonId?: string;
+  relatedVisualizer?: VisualizerType;
+}
+
 export interface VisualizerStep {
   description: string;
   hinglishDescription?: string;
